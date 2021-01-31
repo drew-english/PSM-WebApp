@@ -1,0 +1,8 @@
+image: node:12.18.4
+
+before_script:
+  - npm i
+
+integration-testing:
+  script:
+    - CI=true npm test
